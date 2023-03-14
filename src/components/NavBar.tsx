@@ -13,7 +13,7 @@ const NavBar = () => {
       </a>
       <ul className={clsx(styles.navLinks)}>
         <li>
-          <a href="#">Collections</a>
+          <a href="#">Home</a>
         </li>
         <li>
           <a href="#">Men</a>
