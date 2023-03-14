@@ -15,3 +15,8 @@
   --black: hsl(0, 0%, 0%);
   --black-75: hsla(0, 0%, 0, 0.75);
 }
+
+body {
+  padding: 2em 8em;
+  background-color: var(--white);
+}
