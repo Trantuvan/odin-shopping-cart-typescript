@@ -25,15 +25,28 @@
   gap: 4em;
 }
 
-.navLinks > * a {
+.navLink {
   font-size: 1.6rem;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
   text-decoration: none;
   color: var(--dark-grayish-blue);
 }
 
-.navLinks > * a:hover {
+.navLink:hover {
   color: var(--very-dark-blue);
   border-bottom: 2px solid var(--primary-orange);
+}
+
+.navLink.active {
+  color: var(--primary-orange);
+  background-color: var(--primary-pale-orange);
+  font-weight: 700;
+}
+
+.navLink.pending {
+  color: var(--primary-orange);
+  font-weight: 700;
 }
 
 .navActions {
