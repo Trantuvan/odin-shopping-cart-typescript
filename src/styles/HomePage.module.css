@@ -5,7 +5,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
-  padding: 4rem 6rem;
+  padding: 8rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: center;
