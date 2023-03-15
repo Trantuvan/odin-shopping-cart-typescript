@@ -1,15 +1,15 @@
 import clsx from "clsx";
+import { Outlet } from "react-router-dom";
 
 import styles from "styles/App.module.css";
 import NavBar from "components/NavBar";
 import Footer from "components/Footer";
-import { HomePage } from "pages";
 
 function App() {
   return (
     <div className={clsx(styles.appContainer)}>
       <NavBar />
-      <HomePage />
+      <Outlet />
       <Footer />
     </div>
   );
