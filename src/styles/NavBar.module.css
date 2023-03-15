@@ -39,7 +39,7 @@
 .navActions {
   display: flex;
   gap: 3em;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
