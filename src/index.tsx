@@ -6,12 +6,13 @@ import "styles/normalize.css";
 import "styles/reset.css";
 import "styles/index.css";
 import App from "./App";
-import { HomePage } from "pages";
+import { ErrorPage, HomePage } from "pages";
 
 const router = createHashRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [{ index: true, element: <HomePage /> }],
   },
 ]);
