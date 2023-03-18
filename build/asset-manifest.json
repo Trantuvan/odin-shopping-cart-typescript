@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/odin-shopping-cart/static/css/main.23c304d4.css",
-    "main.js": "/odin-shopping-cart/static/js/main.f0c41d68.js",
+    "main.css": "/odin-shopping-cart/static/css/main.32f2639d.css",
+    "main.js": "/odin-shopping-cart/static/js/main.62f2a57b.js",
     "static/media/homepage-image.png": "/odin-shopping-cart/static/media/homepage-image.bd89f8b360e58987fee2.png",
     "static/media/404.jpg": "/odin-shopping-cart/static/media/404.1798fa102fc489e7e1c0.jpg",
+    "static/media/no-match.png": "/odin-shopping-cart/static/media/no-match.a60759ad1dabe909c46a.png",
     "static/media/background-wave.png": "/odin-shopping-cart/static/media/background-wave.4d168b80b6cbfdcb256b.png",
     "static/media/logo.svg": "/odin-shopping-cart/static/media/logo.4fe9c1e86cf9bf600f0c239f6a6e5317.svg",
     "index.html": "/odin-shopping-cart/index.html",
     "static/media/icon-cart.svg": "/odin-shopping-cart/static/media/icon-cart.539ec608f50e707c94d583ec11acf99d.svg",
-    "main.23c304d4.css.map": "/odin-shopping-cart/static/css/main.23c304d4.css.map",
-    "main.f0c41d68.js.map": "/odin-shopping-cart/static/js/main.f0c41d68.js.map"
+    "main.32f2639d.css.map": "/odin-shopping-cart/static/css/main.32f2639d.css.map",
+    "main.62f2a57b.js.map": "/odin-shopping-cart/static/js/main.62f2a57b.js.map"
   },
   "entrypoints": [
-    "static/css/main.23c304d4.css",
-    "static/js/main.f0c41d68.js"
+    "static/css/main.32f2639d.css",
+    "static/js/main.62f2a57b.js"
   ]
 }
