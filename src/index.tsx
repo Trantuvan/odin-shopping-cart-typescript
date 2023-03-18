@@ -6,7 +6,7 @@ import "styles/normalize.css";
 import "styles/reset.css";
 import "styles/index.css";
 import App from "./App";
-import { ErrorPage, FourZeroFourPage, HomePage } from "pages";
+import { ErrorPage, FourZeroFourPage, HomePage, NoMatchPage } from "pages";
 
 const router = createHashRouter([
   {
@@ -15,8 +15,6 @@ const router = createHashRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        // *only catch 404 for outlet of App
-        // *navBar outside of outlet ErrorPage will handle error
         errorElement: <FourZeroFourPage />,
         children: [
           { index: true, element: <HomePage /> },
@@ -29,6 +27,7 @@ const router = createHashRouter([
               // throw new Response("Not found", { status: 404 });
             },
           },
+          { path: "*", element: <NoMatchPage /> },
         ],
       },
     ],
