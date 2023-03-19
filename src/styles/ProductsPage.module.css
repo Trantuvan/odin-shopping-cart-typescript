@@ -9,8 +9,11 @@
 }
 
 .toolbar {
+  padding: 1.2em;
   grid-area: toolbar;
   background-color: var(--light-grayish-blue);
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
 }
 
 .productList {
