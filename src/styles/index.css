@@ -21,7 +21,8 @@ body {
   padding: 0 10em;
 }
 
-input {
+input,
+select {
   padding: 0.6rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -33,6 +34,7 @@ input {
 
 input:focus,
 button:focus,
+select:focus,
 a:focus {
   outline: var(--primary-pale-orange) solid 2px;
 }
