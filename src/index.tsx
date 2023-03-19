@@ -6,7 +6,13 @@ import "styles/normalize.css";
 import "styles/reset.css";
 import "styles/index.css";
 import App from "./App";
-import { ErrorPage, FourZeroFourPage, HomePage, NoMatchPage } from "pages";
+import {
+  ErrorPage,
+  FourZeroFourPage,
+  HomePage,
+  NoMatchPage,
+  ProductsPage,
+} from "pages";
 
 const router = createHashRouter([
   {
@@ -18,10 +24,7 @@ const router = createHashRouter([
         errorElement: <FourZeroFourPage />,
         children: [
           { index: true, element: <HomePage /> },
-          {
-            path: "products",
-            element: <div>products page</div>,
-          },
+          { path: "products", element: <ProductsPage /> },
           { path: "*", element: <NoMatchPage /> },
         ],
       },
