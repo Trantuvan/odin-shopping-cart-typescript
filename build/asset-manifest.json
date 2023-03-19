@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/odin-shopping-cart/static/css/main.32f2639d.css",
-    "main.js": "/odin-shopping-cart/static/js/main.62f2a57b.js",
+    "main.js": "/odin-shopping-cart/static/js/main.11851d82.js",
     "static/media/homepage-image.png": "/odin-shopping-cart/static/media/homepage-image.bd89f8b360e58987fee2.png",
     "static/media/404.jpg": "/odin-shopping-cart/static/media/404.1798fa102fc489e7e1c0.jpg",
     "static/media/no-match.png": "/odin-shopping-cart/static/media/no-match.a60759ad1dabe909c46a.png",
@@ -10,10 +10,10 @@
     "index.html": "/odin-shopping-cart/index.html",
     "static/media/icon-cart.svg": "/odin-shopping-cart/static/media/icon-cart.539ec608f50e707c94d583ec11acf99d.svg",
     "main.32f2639d.css.map": "/odin-shopping-cart/static/css/main.32f2639d.css.map",
-    "main.62f2a57b.js.map": "/odin-shopping-cart/static/js/main.62f2a57b.js.map"
+    "main.11851d82.js.map": "/odin-shopping-cart/static/js/main.11851d82.js.map"
   },
   "entrypoints": [
     "static/css/main.32f2639d.css",
-    "static/js/main.62f2a57b.js"
+    "static/js/main.11851d82.js"
   ]
 }
