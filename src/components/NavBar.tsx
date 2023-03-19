@@ -9,10 +9,7 @@ import { navigationLinks } from "types";
 
 const navLinks: navigationLinks = [
   { id: 1, name: "Home", to: "/" },
-  { id: 2, name: "Men", to: "men" },
-  { id: 3, name: "Women", to: "women" },
-  { id: 4, name: "About", to: "about" },
-  { id: 5, name: "Contact", to: "contact" },
+  { id: 2, name: "Products", to: "products" },
 ];
 
 const NavBar = () => {

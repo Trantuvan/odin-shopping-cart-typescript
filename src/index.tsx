@@ -19,13 +19,8 @@ const router = createHashRouter([
         children: [
           { index: true, element: <HomePage /> },
           {
-            path: "men",
-            element: <div>men</div>,
-            // *manually throw error
-            loader: () => {
-              throw json({ sorry: "you're fired" }, { status: 404 });
-              // throw new Response("Not found", { status: 404 });
-            },
+            path: "products",
+            element: <div>products page</div>,
           },
           { path: "*", element: <NoMatchPage /> },
         ],
