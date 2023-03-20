@@ -29,28 +29,21 @@ const ProductItem = () => {
     },
   };
 
+  // TODO: redo logic for render star rating
   const wholeStars: starRates = Array.from(
     { length: Math.floor(product.rating.rate) },
-    (_, i) => {
-      const result = {
-        key: i,
-        value: <AiTwotoneStar style={{ color: "hsl(26, 100%, 55%)" }} />,
-      };
-
-      return result;
-    }
+    (_, i) => ({
+      key: i,
+      value: <AiTwotoneStar style={{ color: "hsl(26, 100%, 55%)" }} />,
+    })
   );
 
   const fractionStars: starRates = Array.from(
     { length: 5 - Math.floor(product.rating.rate) },
-    (_, i) => {
-      const result = {
-        key: i,
-        value: <AiTwotoneStar style={{ color: "hsl(220, 14%, 75%)" }} />,
-      };
-
-      return result;
-    }
+    (_, i) => ({
+      key: i,
+      value: <AiTwotoneStar style={{ color: "hsl(220, 14%, 75%)" }} />,
+    })
   );
 
   return (
