@@ -3,6 +3,7 @@ import clsx from "clsx";
 import styles from "styles/ProductsPage.module.css";
 import SearchTool from "components/SearchTool";
 import FilterPrice from "components/FilterPrice";
+import ProductItem from "components/ProductItem";
 
 const ProductsPage = () => {
   return (
@@ -11,7 +12,9 @@ const ProductsPage = () => {
         <SearchTool />
         <FilterPrice />
       </div>
-      <div className={clsx(styles.productList)}>productList</div>
+      <div className={clsx(styles.productList)}>
+        <ProductItem />
+      </div>
     </div>
   );
 };
