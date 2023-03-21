@@ -42,6 +42,6 @@ function ProductItem({ product }: productItemProps) {
       </div>
     </div>
   );
-};
+}
 
 export default ProductItem;
