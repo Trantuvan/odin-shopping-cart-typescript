@@ -13,6 +13,7 @@ import {
   NoMatchPage,
   ProductsPage,
 } from "pages";
+import { loader as productLoader } from "pages/ProductsPage";
 
 const router = createHashRouter([
   {
@@ -24,7 +25,11 @@ const router = createHashRouter([
         errorElement: <FourZeroFourPage />,
         children: [
           { index: true, element: <HomePage /> },
-          { path: "products", element: <ProductsPage /> },
+          {
+            path: "products",
+            element: <ProductsPage />,
+            loader: productLoader,
+          },
           { path: "*", element: <NoMatchPage /> },
         ],
       },
