@@ -1,5 +1,12 @@
+import { Suspense } from "react";
 import clsx from "clsx";
-import { LoaderFunctionArgs, useLoaderData } from "react-router-dom";
+import {
+  Await,
+  defer,
+  LoaderFunctionArgs,
+  useAsyncValue,
+  useLoaderData,
+} from "react-router-dom";
 
 import { productArray } from "types";
 import styles from "styles/ProductsPage.module.css";
@@ -8,8 +15,7 @@ import FilterPrice from "components/FilterPrice";
 import ProductItem from "components/ProductItem";
 
 const ProductsPage = () => {
-  const products = useLoaderData() as productArray;
-  console.log(products);
+  const { products } = useLoaderData() as Record<string, productArray>;
 
   return (
     <div className={clsx(styles.productsContainer)}>
@@ -17,26 +23,41 @@ const ProductsPage = () => {
         <SearchTool />
         <FilterPrice />
       </div>
-      <ul className={clsx(styles.productList)}>
+      {/* <ul className={clsx(styles.productList)}>
         {products.map((product) => (
           <li key={product.id}>
             <ProductItem product={product} />
           </li>
         ))}
-      </ul>
+      </ul> */}
+      <Suspense fallback={<p>Loading...</p>}>
+        <Await resolve={products}>
+          {(productLoaded) => (
+            <ul className={clsx(styles.productList)}>
+              {productLoaded.map((product) => (
+                <li key={product.id}>
+                  <ProductItem product={product} />
+                </li>
+              ))}
+            </ul>
+          )}
+        </Await>
+      </Suspense>
     </div>
   );
 };
 
 async function loader({ request }: LoaderFunctionArgs) {
-  const response = await fetch("https://fakestoreapi.com/products", {
+  const products = fetch("https://fakestoreapi.com/products", {
     signal: request.signal,
   });
 
-  if (response.ok === false) {
-    throw new Response(`${response.statusText}`, { status: response.status });
-  }
-  return response;
+  // if (response.ok === false) {
+  //   throw new Response(`${response.statusText}`, { status: response.status });
+  // }
+
+  // const products = await response.json();
+  return defer({ products });
 }
 
 export { loader };
